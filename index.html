@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Undangan Ulang Tahun</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="undangan">
+
+    <!-- BAGIAN 1: Hero dengan balon dan confetti (semua dibuat dari CSS) -->
+    <header class="hero">
+      <span class="balon balon-biru" aria-hidden="true"></span>
+      <span class="balon balon-kuning" aria-hidden="true"></span>
+      <div class="confetti" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <p class="sapaan">Kamu diundang ke pesta ulang tahun</p>
+      <h1>Rava Vivan  Yudistin</h1>
+      <div class="umur" aria-label="berusia 20 tahun">20</div>
+    </header>
+
+    <!-- BAGIAN 2: Pesan -->
+    <section class="pesan">
+      <p>
+        Ayo rayakan bersama! Akan ada makan malam bersama,
+        kue tiup lilin, dan banyak cerita seru.
+      </p>
+    </section>
+
+    <!-- BAGIAN 3: Detail acara -->
+    <section class="detail">
+      <h2>Detail acara</h2>
+      <dl>
+        <div><span class="ikon" aria-hidden="true">📅</span>
+          <dt>Hari dan tanggal</dt><dd>Minggu, 22 November 2026</dd></div>
+        <div><span class="ikon" aria-hidden="true">🕕</span>
+          <dt>Waktu</dt><dd>18.00 WIB sampai selesai</dd></div>
+        <div><span class="ikon" aria-hidden="true">📍</span>
+          <dt>Tempat</dt><dd>Kafe Navas Jl. Veteran No.3, Wetan Ktr., Jemberlor, Kec. Patrang, Kabupaten Jember, Jawa Timur 68118</dd></div>
+        <div><span class="ikon" aria-hidden="true">👗</span>
+          <dt>Pakaian</dt><dd>Navy Dan Cream</dd></div>
+      </dl>
+    </section>
+    <!-- BAGIAN 4: Peta lokasi -->
+    <section class="peta">
+      <h2>Lokasi acara</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7898.7921950780865!2d113.7054012415363!3d-8.162787945376767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695aa626f3d8b%3A0x43dd1fc7619a77c!2sNAVAS!5e0!3m2!1sid!2sid!4v1794244035979!5m2!1sid!2sid"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+      </iframe>
+
+      <p class="alamat">Jl. Veteran No.3, Wetan Ktr., Jemberlor, Kec. Patrang, Kabupaten Jember, Jawa Timur 68118</p>
+      <a class="tombol tombol-garis"
+         href="https://www.google.com/maps/search/?api=1&query=Kafe+Navas+Jember"
+         target="_blank" rel="noopener">Buka di Google Maps</a>
+    </section>
+
+    <!-- BAGIAN 5: Konfirmasi kehadiran -->
+    <section class="rsvp">
+      <h2>Bisa hadir?</h2>
+      <p>Kabari kami sebelum 22 November 2026 yaw.</p>
+      <!-- Ganti 6281234567890 dengan nomor WhatsApp kamu (awali 62, tanpa 0 dan tanpa +) -->
+      <a class="tombol"
+         href="https://wa.me/6287771106141?text=Halo%20Rava%2C%20aku%20bisa%20hadir!"
+         target="_blank" rel="noopener">Konfirmasi lewat WhatsApp</a>
+    </section>
+
+    <footer><p>Sampai jumpa di pesta!</p></footer>
+  </main>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    </style>
+</body>
+</html>

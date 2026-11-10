@@ -1,0 +1,35 @@
+/* ===== 1. VARIABEL WARNA & FONT ===== */
+:root {
+  --biru: #1d3fa8;
+  --biru-tua: #142a73;
+  --kuning: #ffd23f;
+  --merah-muda: #ffb8cc;
+  --putih: #f7faff;
+
+  --font-judul: "Pacifico", "Segoe UI", sans-serif;
+  --font-isi: "DM Sans", "Segoe UI", sans-serif;
+}
+
+/*===== 2. PENGATURAN DASAR ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-isi);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--biru-tua);
+  background: var(--biru);
+  padding: 1.5rem 1rem;
+}
+
+.undangan {
+  max-width: 32rem;
+  margin: 0 auto;
+  background: var(--putih);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
