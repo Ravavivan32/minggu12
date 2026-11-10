@@ -6,6 +6,7 @@
   --merah-muda: #ffb8cc;
   --putih: #f7faff;
   --merah: #DC143C;
+  --biru-muda: #4A90E2;
 
   --font-judul: "Pacifico", "Segoe UI", sans-serif;
   --font-isi: "DM Sans", "Segoe UI", sans-serif;
@@ -30,7 +31,6 @@ body {
   max-width: 32rem;
   margin: 0 auto;
   background: var(--putih);
-  padding: 2rem;
   border-radius: 1.5rem;
   overflow: hidden;
 }
@@ -69,6 +69,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;                /* membuat lingkaran */
   border: 0.375rem solid var(--putih);
   z-index: 3;
 }
@@ -105,9 +106,96 @@ body {
 .confetti span:nth-child(2) { left: 34%; top: 35%; background: var(--kuning); transform: rotate(60deg);}
 .confetti span:nth-child(3) { left: 70%; top: 14%; background: var(--merah); transform: rotate(35deg);}
 .confetti span:nth-child(4) { left: 80%; top: 38%; background: var(--putih); transform: rotate(10deg);}
-.confetti span:nth-child(5) { left: 12%; top: 48%; background: var(--kuning); border-radius: 50%; transform: rotate(45deg);}
-.confetti span:nth-child(6) { left: 3.25rem; top: 1.75rem; background: var(--merah-muda); }
-.confetti span:nth-child(7) { left: 0.5rem; top: 2rem; background: var(--biru); }
-.confetti span:nth-child(8) { left: 2.25rem; top: 2.25rem; background: var(--kuning); }
-.confetti span:nth-child(9) { left: 3.75rem; top: 2.5rem; background: var(--merah-muda); }
-.confetti span:nth-child(10) { left: 1.75rem; top: 2.75rem; background: var(--biru); }  
+.confetti span:nth-child(5) { left: 7%; top: 48%; background: var(--kuning); border-radius: 50%;}
+.confetti span:nth-child(6) { left: 90%; top: 62%; background: var(--putih); border-radius: 50%}
+.confetti span:nth-child(7) { left: 20%; top: 70%; background: var(--merah); transform: rotate(25deg);}
+.confetti span:nth-child(8) { left: 62%; top: 72%; background: var(--biru); transform: rotate(30deg);}
+.confetti span:nth-child(9) { left: 46%; top: 8%; background: var(--merah); border-radius: 50%;}
+.confetti span:nth-child(10) { left: 55%; top:22%; background: var(--putih); transform: rotate(70deg);}  
+
+/*===== 4. PESAN ===== */
+.pesan { padding: 4rem 2rem 1.5rem; text-align: center; }
+/*===== 5. DETAIL ===== */ 
+.detail { padding: 1rem 2rem 2rem; }
+h2 { 
+  font-family: var(--font-judul); 
+  font-weight: 400; 
+  font-size: 1.5rem; color: var(--biru); 
+  margin-bottom: 0.75rem;}
+
+.detail dl div {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  column-gap: 0.75rem;
+  padding: 0.875rem 0;
+  border-top: 2px solid var(--merah-muda);
+}
+.detail dl div:last-child {
+  border-bottom: 2px solid var(--merah-muda);
+}
+.ikon {
+  grid-row: 1 / 3;               /* ikon memanjang di dua baris (dt dan dd) */
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--kuning);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+dt { font-size: 0.9rem; opacity: 0.75; }
+dt { font-weight: 500; font-size: 1.1875rem;}
+
+/*===== 6. PETA ===== */
+.peta {
+  padding: 2rem;
+}
+.peta > * {
+  margin-left: 2rem;
+  margin-right: 1rem;
+  
+}
+
+/*===== 7. TOMBOL ===== */
+.tombol {
+  display: inline-block;
+  background: var(--kuning);
+  color: var(--biru-tua);
+  font-weight: 500;
+  font-size: 1.120rem;
+  padding: 0.875rem 1.75rem;
+  border-radius: 999px;
+  text-decoration: none;
+}
+.tombol:hover { background: var(--putih);}
+.tombol:focus-visible { outline: 3px solid var(--biru); outline-offset: 3px; }
+.tombol-garis { 
+  color: var(--biru);
+  border: 2px solid var(--biru);
+  color: var(--biru);
+ }
+.tombol-garis:hover { background: var(--biru); color: var(--putih);}
+
+/*===== 8. RSV & FOOTER ===== */
+.rsvp { 
+  background: var(--biru);
+  color: var(--putih);
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+.rsvp h2 { color: var(--putih); margin-bottom: 0.2rem;}
+.rsvp p { margin-bottom: 1.5rem;}
+.rsvp .tombol:focus-visible { outline-color: var(--putih); }
+
+footer {
+  background: var(--biru-tua);   
+  color: var(--putih);        
+  text-align: center;            
+  padding: 1rem;                
+  font-size: 0.9rem;
+}
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none; opacity: 0.5; }
+}
