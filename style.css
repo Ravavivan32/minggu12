@@ -5,6 +5,7 @@
   --kuning: #ffd23f;
   --merah-muda: #ffb8cc;
   --putih: #f7faff;
+  --merah: #DC143C;
 
   --font-judul: "Pacifico", "Segoe UI", sans-serif;
   --font-isi: "DM Sans", "Segoe UI", sans-serif;
@@ -33,3 +34,80 @@ body {
   border-radius: 1.5rem;
   overflow: hidden;
 }
+/*===== 3. HERO ===== */
+.hero {
+  background: var(--merah-muda);
+  text-align: center;
+  padding: 3.5rem 1.5rem 4.5rem;
+  position: relative;
+  overflow: visible;
+  margin-bottom: 2rem;
+}
+.sapaan { font-weight: 500; position: relative;}
+
+.hero h1 {
+  font-family: var(--font-judul);
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: var(--biru-tua);
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+.umur {
+  position: absolute;
+  left: 50%;
+  bottom: -3rem;
+  transform: translateX(-50%) rotate(-6deg);
+  width: 6.5rem;
+  height: 6.5rem;
+  background: var(--kuning);
+  color: var(--biru-tua);
+  font-family: var(--font-judul);
+  font-weight: 800;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.375rem solid var(--putih);
+  z-index: 3;
+}
+
+/* Balon: lingkaran lonjong + tali dari ::after */
+.balon {
+  position: absolute;
+  top: 1.25rem;
+  width: 2.75rem;
+  height: 3.4rem;
+  background: var(--kuning);
+  border-radius: 50% 50% 40% 40%; 
+}
+.balon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 2px;
+  height: 3rem;
+  background: var(--biru-tua);
+  opacity: 0.5;
+}
+.balon-biru { left: 1.25rem; top: 0.7rem; background: var(--biru); transform: rotate(-12deg); }
+.balon-kuning { right: 1.5rem; top: 0.7rem; background: var(--kuning); transform: rotate(10deg); }
+
+.confetti span {
+  position: absolute;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 2px;
+}
+.confetti span:nth-child(1) { left: 22%; top: 12%; background: var(--biru); transform: rotate(20deg);}
+.confetti span:nth-child(2) { left: 34%; top: 35%; background: var(--kuning); transform: rotate(60deg);}
+.confetti span:nth-child(3) { left: 70%; top: 14%; background: var(--merah); transform: rotate(35deg);}
+.confetti span:nth-child(4) { left: 80%; top: 38%; background: var(--putih); transform: rotate(10deg);}
+.confetti span:nth-child(5) { left: 12%; top: 48%; background: var(--kuning); border-radius: 50%; transform: rotate(45deg);}
+.confetti span:nth-child(6) { left: 3.25rem; top: 1.75rem; background: var(--merah-muda); }
+.confetti span:nth-child(7) { left: 0.5rem; top: 2rem; background: var(--biru); }
+.confetti span:nth-child(8) { left: 2.25rem; top: 2.25rem; background: var(--kuning); }
+.confetti span:nth-child(9) { left: 3.75rem; top: 2.5rem; background: var(--merah-muda); }
+.confetti span:nth-child(10) { left: 1.75rem; top: 2.75rem; background: var(--biru); }  
